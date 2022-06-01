@@ -1,0 +1,229 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.navbar {
+  font-family: 'Roboto';
+  display: block;
+  padding: 8px;
+  border-bottom: 1px solid #ffffff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  min-height: 100vh;
+}
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.bottom-card{
+    color: white;
+    display: flex;
+    background: #1f2029;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+.textoLink{
+  margin-left: 3rem;
+  justify-content: left;
+  background-color: #1f2029;
+  resize: vertical;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+  width: 13rem;
+  height: 2rem;
+  border-radius: 30px;
+}
+.textoLink:hover{
+  background: linear-gradient(
+        90deg,
+        rgb(245, 142, 24) 0%,
+        rgb(192, 93, 27) 100%
+    );
+}
+
+.post-card .cimaPublic {
+    color: white;
+    background: #1f2029;
+    padding: 1.5rem;
+}
+.headerPublic{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.fotoAndName{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 45rem;
+}
+
+.post-card h3{
+  padding-left: 2.5%;
+}
+
+.post-card h4{
+  padding: 3.5% 0 1% 0%;
+
+}
+
+.post-card .nomePerfil{
+  font-size: 1.5rem;
+}
+
+.post-card .fotoPerfil {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 1px solid rgb(255, 94, 0);
+}
+
+.post-card .fotoPublicacao {
+  height: 560px;
+  width: 950px;
+  object-fit: cover;
+}
+
+.comment{
+    margin-left: 2rem;
+}
+
+.icon{
+  margin-left: 0.4rem;
+  color: white;
+}
+
+.buttonLikeComment{
+  cursor: pointer;
+}
+
+.file{
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+}
+
+.post-card .Feed1Form{
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #1f2029;
+
+}
+
+.post-card .Feed1Emoji{
+  color: white;
+  cursor: pointer;
+}
+
+.post-card .Feed1Emoji:hover{
+  color: rgb(255, 94, 0);
+}
+
+
+.post-card .Feed1Input {
+  color: white;
+  flex: 1;
+  outline: none;
+  background-color: #1f2029;
+  border: 2px solid #2a2c39;
+  padding-left: 10px;
+  background: #181b23;
+  font-size: 1rem;
+  resize: none;
+  cursor: text;
+  resize: vertical;
+  resize: none;
+  min-height: 30px;
+  border-radius: 30px;
+}
+
+
+.post-card .Feed1Input:focus{
+  outline: 0;
+  border-color: rgb(255, 94, 0);
+}
+
+.post-card .ButtonFeed1{
+  margin-left: 5px;
+  color: rgb(255, 94, 0);
+  font-size: 1rem;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0px 20px;
+}
+
+.post-card .ButtonFeed1:hover{
+  padding: 0px 19px;
+  background: transparent;
+  border: 1px solid rgb(255, 94, 0);
+  border-radius: 30px;
+}
+.comentarios{
+  padding: 1rem;
+  background-color: #1f2029;
+}
+
+.nomeComentario{
+  color: white;
+}
+.fotoComentario{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid rgb(255, 94, 0);
+}
+
+.commentComentario{
+  color: white;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.clickComentarios{
+  display: none;
+}
+
+.dataPublic{
+  color: white;
+  float: right;
+}
+
+.followIconFeed{
+  color: white;
+  margin-left: 2%;
+  cursor: pointer;
+}
+.followIconFeed:hover{
+  color: rgb(255, 94, 0);
+  border: 1px solid rgb(255, 94, 0);
+  border-radius: 40%;
+}

@@ -1,0 +1,107 @@
+.Forum{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.BotoesForum{
+    padding-top: 5rem;
+    padding-bottom: 20rem;
+    width: 78%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.BotoesForum .btn {
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    padding-top: 8px;
+}
+
+.BotoesForum .btn .BotaoForum{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    color: white;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    font-size: 20px;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+    cursor: pointer;
+}
+
+.BotoesForum .btn:hover .BotaoForum {
+    letter-spacing: 2px;
+    background: linear-gradient(
+        90deg,
+        rgb(245, 142, 24) 0%,
+        rgb(192, 93, 27) 100%
+      );;
+}
+.BotoesForum .btn .BotaoForum::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255,255,255,0.15), transparent);
+    transform: skewX(45deg) translateX(0);
+    transition: 0.5s;
+}
+
+.BotoesForum .btn:hover a::before{
+    transform: skewX(45deg) translateX(200%);
+}
+
+.BotoesForum .btn::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 50px;
+    height: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.BotoesForum .btn:hover::before{
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+}
+
+
+.BotoesForum .btn::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5px;
+    width: 50px;
+    height: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.BotoesForum .btn:hover::after{
+    top: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+}

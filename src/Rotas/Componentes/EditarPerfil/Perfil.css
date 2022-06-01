@@ -1,0 +1,86 @@
+.PerfilDiv{
+    display: block;
+    justify-content: center;
+    padding-top: 5rem;
+    align-items: center;
+
+}
+.h1Perfil{
+    text-align: center;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 3rem;
+}
+
+
+.PerfilComponente{
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    margin-left: 11%;
+    width: 78%;
+}
+
+.InputPerfil{
+    margin-bottom: 0.5rem;
+    width: 100%;
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form-input {
+    display: block;
+    outline: none;
+    border-radius: 2px;
+    height: 50px;
+    width: 100%;
+    border: none;
+    background: #181b23;
+    color: white;
+  }
+  
+  .form-input:focus{
+    border: 1px solid #dd6b20;
+  }
+  
+  .form-input::placeholder {
+    color: #595959;
+    font-size: 12px;
+  }
+  
+  .buttonPerfil {
+    justify-content: center;
+
+    width: 50%;
+    margin-top: 5%;
+    font-family: 'Roboto';
+    line-height: 50px;
+    border-radius: 2px;
+    background-color: #181b23;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+  
+  }
+  
+  .buttonPerfil:hover {
+    cursor: pointer;
+    background: linear-gradient(
+      90deg,
+      rgb(245, 142, 24) 0%,
+      rgb(192, 93, 27) 100%
+    );
+    transition: all 0.4s ease-out;
+  }
+
+

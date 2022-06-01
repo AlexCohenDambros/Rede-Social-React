@@ -1,0 +1,579 @@
+html{
+    background: #15181f;
+}
+
+.menu-geral{
+    display: flex;
+}
+
+.menu-left{
+    /* border-right: 0.5px solid white; */
+    text-align: center;
+    width: 20%;
+    height: 100vh;
+}
+
+.menu-center{
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 40vh;
+    /* border-bottom: 1px solid white; */
+}
+
+
+/* -================================ BOTOES CENTRO ====================================*/
+
+.BotoesCenter{
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.BotoesCenter .btn {
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    width: 238px;
+    height: 70px;
+    display: inline-block;
+    padding-top: 8px;
+}
+
+.BotoesCenter .btn .BotaoCenter{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    color: white;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    font-size: 20px;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+    cursor: pointer;
+}
+
+.BotoesCenter .btn:hover .BotaoCenter {
+    letter-spacing: 2px;
+    background: linear-gradient(
+        90deg,
+        rgb(245, 142, 24) 0%,
+        rgb(192, 93, 27) 100%
+      );;
+}
+.BotoesCenter .btn .BotaoCenter::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255,255,255,0.15), transparent);
+    transform: skewX(45deg) translateX(0);
+    transition: 0.5s;
+}
+
+.BotoesCenter .btn:hover a::before{
+    transform: skewX(45deg) translateX(200%);
+}
+
+.BotoesCenter .btn::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 50px;
+    height: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.BotoesCenter .btn:hover::before{
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+}
+
+
+.BotoesCenter .btn::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5px;
+    width: 50px;
+    height: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.BotoesCenter .btn:hover::after{
+    top: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+}
+
+
+/* -================================ BOTOES LEFT ====================================*/
+
+.containerbutton{
+    margin-top: 30%;
+    font-weight: 1.2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 1.2rem;
+
+}
+
+.containerbutton .btn {
+    text-align: center;
+    position: relative;
+    width: 280px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.containerbutton .btn .BotoesLeft{
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    color: white;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    font-size: 20px;
+    transition: 0.5s;
+    border-radius: 30px;
+}
+
+.containerbutton .btn:hover .BotoesLeft {
+    letter-spacing: 2px;
+    background: linear-gradient(
+        90deg,
+        rgb(245, 142, 24) 0%,
+        rgb(192, 93, 27) 100%
+      );;
+}
+
+
+
+.button__icon{
+    font-size: 1.25rem;
+    margin-right: 10px;
+    transition: .3s;
+}
+
+.button--flex{
+    display: inline-flex;
+    align-items: center;
+}
+
+.nomeUsuario{
+    margin-top: 4%;
+    color: white;
+    font-size: 2rem;
+}
+
+.FotoPerfil{
+    margin-top: 10%;
+}
+
+.foto{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 94, 0);
+}
+
+.foto2{
+    margin-top: 40px;
+    margin-left: 100px;
+    max-width:100px;
+    max-height:40;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+}
+
+.post{
+    margin-top: 2%;
+    width: 100%;
+    height: 75%;
+    resize: vertical;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.formInput{
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 82%;
+    height: 90%;
+    background: #1f2029;
+    border-radius: .5rem;
+}
+
+.cima{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+.inputPost{
+    margin-top: 40px;
+    width: 89%;
+    height: 118px;
+    border: 2px solid #2a2c39;
+    padding: .75rem 1rem .25rem;
+    background: #181b23;
+    color: white;
+    font-size: 1.20rem;
+    resize: none;
+    cursor: text;
+    resize: vertical;
+    resize: none;
+    min-height: 118px;
+    border-radius: 30px;
+}
+
+.inputPost:focus{
+    outline: 0;
+    border-color: rgb(255, 94, 0);
+}
+
+.baixo{
+    display: flex;
+    padding: 1.5rem;
+    padding-right: 3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn2{
+    margin-right: 10px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    width: 180px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    background: #181b23;
+    color: white;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    font-size: 20px;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+
+.btn2:hover{
+    background: linear-gradient(
+        90deg,
+        rgb(245, 142, 24) 0%,
+        rgb(192, 93, 27) 100%
+    );
+    letter-spacing: 2px;
+}
+
+.btn2 label{
+    cursor: pointer;
+}
+
+.cont{
+    margin-left: 4%;
+    color: white;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+
+.texto{
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+}
+
+.BotoesPublicar{
+    display: flex;
+}
+
+textarea{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.geral{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-left: 10%;
+}
+
+
+/*========== SCROLL UP ==========*/
+.scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    background-color: #1f2029;
+    padding: 0 .3rem;
+    border-radius: .4rem;
+    transition: .4s;
+}
+
+.scrollup:hover{
+    background: linear-gradient(
+        90deg,
+        rgb(245, 142, 24) 0%,
+        rgb(192, 93, 27) 100%
+    );
+}
+
+.scrollup__icon{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+/* Show scroll */
+.show-scroll{
+    bottom: 5rem;
+}
+
+/*========== SCROLL BAR ==========*/
+::-webkit-scrollbar{
+    width: .60rem;
+    background: #1f2029;
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(
+        90deg,
+        rgb(245, 142, 24) 0%,
+        rgb(192, 93, 27) 100%
+    );
+    border-radius: .5rem;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+/* -================================ BOTOES RIGHT ====================================*/
+.menu-right{
+    /* border-left: 0.5px solid white; */
+    width: 25%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-right: 3rem;
+
+}
+
+.logo{
+    margin-top: 1rem;
+    width: 150px;
+    height: 150px; 
+}
+
+.friends{
+    margin-top: 6.2rem;
+    width: 100%;
+    background: #1f2029;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+}
+
+/* ====================================== */
+
+
+.containerbuttonRight{
+    margin-top: 1.2rem;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.containerbuttonRight .btnRight {
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    width: 238px;
+    height: 70px;
+    display: inline-block;
+    padding-top: 8px;
+    margin-bottom: 1rem;
+}
+
+.containerbuttonRight .btnRight .BotaoRight{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    color: white;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    font-size: 20px;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.containerbuttonRight .btnRight:hover .BotaoRight  {
+    letter-spacing: 2px;
+    background: linear-gradient(
+        90deg,
+        rgb(245, 142, 24) 0%,
+        rgb(192, 93, 27) 100%
+      );;
+}
+.containerbuttonRight .btnRight .BotaoRight::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255,255,255,0.15), transparent);
+    transform: skewX(45deg) translateX(0);
+    transition: 0.5s;
+}
+
+.containerbuttonRight .btnRight:hover a::before{
+    transform: skewX(45deg) translateX(200%);
+}
+
+.containerbuttonRight .btnRight::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 50px;
+    height: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.containerbuttonRight .btnRight:hover::before{
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+}
+
+
+.containerbuttonRight .btnRight::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5px;
+    width: 50px;
+    height: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.containerbuttonRight .btnRight:hover::after{
+    top: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+}
+
+
+.divAmigos{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    color:white;
+}
+
+.fotoAmigo{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 94, 0);
+}
+
+.nomeAmigo{
+    margin-left: 0.5rem;
+    color: white;
+}
+
+.pAmigos{
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.fotoAndNameAmigos{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+.followIcon{
+    cursor: pointer;
+}
+
+.followIcon:hover{
+    color: rgb(255, 94, 0);
+    border: 1px solid rgb(255, 94, 0);
+    border-radius: 30%;
+}
+
+
